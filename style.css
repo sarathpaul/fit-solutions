@@ -23,7 +23,8 @@ body {
     background-color: #FFFFFF0A;
     backdrop-filter: blur(60px);
     border: 1px solid #FFFFFF45;
-    margin: 0 250px 0 250px;
+    /* margin: 0 250px 0 250px; */
+    margin: 0 130px 0 130px;
 }
 
 .navbar .logo img {
@@ -45,7 +46,7 @@ body {
     height: 22px;
 }
 
-.navbar .request-btn {
+.btn-primary {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,4 +69,54 @@ body {
 .navbar .request-btn img {
     width: 14.14px;
     height: 14.14px;
+}
+
+.banner-content-wraper {
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content-wraper h1 {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.banner-content-wraper h1 span {
+    color: #FBAD1C;
+}
+
+.banner-content-wraper p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFFA1;
+    text-align: center;
+    margin: 0 250px 29px 250px;
+}
+
+.banner-img-wraper {
+    margin-top: 71px;
+    width: 100%;
+    padding-top: 377px;
+    background-image: url("./img/Group-38.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.semicircle-wraper {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    clip-path: ellipse(60% 100% at bottom);
+}
+
+.semicircle-wraper img {
+    width: 692.21px;
+    height: 692.21px;
 }
