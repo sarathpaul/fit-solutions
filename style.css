@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fustat", sans-serif;
+}
+
+.banner {
+    background-image: url("./img/3d-shape-glowing-with-bright-holographic-colors1.png");
+    background-color: #1E1E1E;
+    padding-top: 50px;
+}
+
+.banner .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 37px 0 39px;
+    height: 101px;
+    background-color: #FFFFFF0A;
+    backdrop-filter: blur(60px);
+    border: 1px solid #FFFFFF45;
+    margin: 0 250px 0 250px;
+}
+
+.navbar .logo img {
+    width: 266.62px;
+    height: 69px;
+}
+
+.navbar .right-actions-wraper {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navbar .menu {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.navbar .request-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.81px;
+    font-family: "Fustat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 229px;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #FFFFFF0A;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #FBAD1C, #FFFFFF, #FBAD1C);
+    border-radius: 10px;
+}
+
+.navbar .request-btn img {
+    width: 14.14px;
+    height: 14.14px;
+}
