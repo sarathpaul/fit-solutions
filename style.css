@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -11,6 +9,7 @@ body {
 .banner {
     background-image: url("./img/3d-shape-glowing-with-bright-holographic-colors1.png");
     background-color: #1E1E1E;
+    background-repeat: no-repeat;
     padding-top: 50px;
 }
 
@@ -119,4 +118,36 @@ body {
 .semicircle-wraper img {
     width: 692.21px;
     height: 692.21px;
+}
+.services-wraper {
+    background-color: #1E1E1E;
+}
+.services-wraper .services-item-wraper {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.084) 0%, rgba(217, 217, 217, 0.042) 100%);
+    background-color: #1E1E1ED4;
+    border: 1px solid #FFFFFF33;
+    /* transform: rotate(-3deg); */
+    transform: skewY(-3deg);
+
+}
+.services-wraper .item {
+    display: flex;
+    align-items: center;
+    gap: 20.8px;
+}
+h3 {
+    font: normal 700 38px/80px "Fustat", sans-serif;
+    color: #FFFFFF;
+}
+h5 {
+    font: normal 400 18px/30px "Fustat", sans-serif;
+    color: #FFFFFFBA;
+;
 }
