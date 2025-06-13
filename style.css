@@ -161,3 +161,13 @@ h5 {
     height: 2px;
     background: linear-gradient(90deg, #FBAD1C 31.83%, #FFFFFF 58.88%, #1E1E1E 100%);
 }
+.why-choose-wraper-outer {
+    clip-path: ellipse(60% 100% at bottom);
+    background-image: linear-gradient(90deg, #FBAD1C 16.68%, #FCC050 44.84%, #FFFFFF 62.55%, rgba(255, 255, 255, 0.6) 77.1%, #1E1E1E 85.03%);;
+    border-image-repeat: repeat;
+}
+.why-choose-wraper-inner{
+    padding: 250px 50px 0 50px;
+    background-color: #1E1E1E;
+    clip-path: ellipse(59% 98% at bottom);
+}
