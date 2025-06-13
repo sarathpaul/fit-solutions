@@ -142,12 +142,22 @@ body {
     align-items: center;
     gap: 20.8px;
 }
+h2 {
+    font: normal 600 58px/70px "Fustat", sans-serif;
+    color: #FFFFFF;
+}
 h3 {
     font: normal 700 38px/80px "Fustat", sans-serif;
     color: #FFFFFF;
 }
+h4 {
+    font: normal 400 20px/37px "Fustat", sans-serif;
+}
 h5 {
     font: normal 400 18px/30px "Fustat", sans-serif;
-    color: #FFFFFFBA;
-;
+}
+.line {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #FBAD1C 31.83%, #FFFFFF 58.88%, #1E1E1E 100%);
 }
