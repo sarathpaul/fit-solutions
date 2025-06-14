@@ -26,7 +26,7 @@ body {
     margin: 0 130px 0 130px;
 }
 
-.navbar .logo img {
+.logo img {
     width: 266.62px;
     height: 69px;
 }
@@ -63,6 +63,10 @@ body {
     border-width: 2px;
     border-image-source: linear-gradient(to right, #FBAD1C, #FFFFFF, #FBAD1C);
     border-radius: 10px;
+}
+.btn-primary.btn-small {
+    width: 195px;
+    height: 60px;
 }
 
 .navbar .request-btn img {
@@ -178,6 +182,15 @@ h3 {
     padding: 250px 50px 0 50px;
     background-color: #1E1E1E;
     clip-path: ellipse(59% 98% at bottom);
+}
+.font-sora-p {
+    font: normal 300 15px/156% "Sora", sans-serif;
+    color: #A1AAC9;
+}
+.bottom-footer {
+    border-top: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #CBCBCB 51%, rgba(255, 255, 255, 0) 100%);
 }
 @media (min-width: 1280px) {
     h2 {
