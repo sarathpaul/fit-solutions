@@ -119,10 +119,10 @@ body {
     width: 692.21px;
     height: 692.21px;
 }
-.services-wraper {
+.servicesbar-wraper {
     background-color: #1E1E1E;
 }
-.services-wraper .services-item-wraper {
+.servicesbar-wraper .services-item-wraper {
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -137,7 +137,7 @@ body {
     transform: skewY(-3deg);
 
 }
-.services-wraper .item {
+.servicesbar-wraper .item {
     display: flex;
     align-items: center;
     gap: 20.8px;
