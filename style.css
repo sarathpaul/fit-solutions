@@ -150,12 +150,15 @@ h3 {
     font: normal 700 38px/80px "Fustat", sans-serif;
     color: #FFFFFF;
 }
-h4 {
+ h4 {
+    font: normal 700 30px/100% "Fustat", sans-serif;
+ }
+ h5 {
     font: normal 400 20px/37px "Fustat", sans-serif;
-}
-h5 {
+ }
+ h6 {
     font: normal 400 18px/30px "Fustat", sans-serif;
-}
+ }
 .line {
     width: 40px;
     height: 2px;
@@ -164,10 +167,48 @@ h5 {
 .why-choose-wraper-outer {
     clip-path: ellipse(60% 100% at bottom);
     background-image: linear-gradient(90deg, #FBAD1C 16.68%, #FCC050 44.84%, #FFFFFF 62.55%, rgba(255, 255, 255, 0.6) 77.1%, #1E1E1E 85.03%);;
-    border-image-repeat: repeat;
+   background-repeat: no-repeat;
 }
 .why-choose-wraper-inner{
     padding: 250px 50px 0 50px;
     background-color: #1E1E1E;
     clip-path: ellipse(59% 98% at bottom);
+}
+@media (min-width: 1280px) {
+    h2 {
+        font: normal 600 30px/40px "Fustat", sans-serif;
+    }
+
+    h4 {
+        font: normal 700 23px/100% "Fustat", sans-serif;
+    }
+
+    h5 {
+        font: normal 400 20px/37px "Fustat", sans-serif;
+    }
+
+    h6 {
+        font: normal 400 18px/30px "Fustat", sans-serif;
+    }
+
+    .services-wraper {
+        padding-left: 100px;
+    }
+
+    .webdev-wraper {
+        position: relative;
+        background-color: #292929;
+        padding: 37px 40px;
+        background:
+            linear-gradient(135deg, transparent 45px, #292929 0) top left,
+            linear-gradient(-47deg, transparent 59px, #292929 0) bottom left;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .corner-arrow {
+        position: absolute;
+        bottom: 1px;
+        right: 0px;
+    }
 }
