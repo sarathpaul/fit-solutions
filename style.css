@@ -10,6 +10,7 @@ body {
     background-image: url("./img/3d-shape-glowing-with-bright-holographic-colors1.png");
     background-color: #1E1E1E;
     background-repeat: no-repeat;
+    background-size: 100%;
     padding-top: 50px;
 }
 
@@ -22,7 +23,6 @@ body {
     background-color: #FFFFFF0A;
     backdrop-filter: blur(60px);
     border: 1px solid #FFFFFF45;
-    /* margin: 0 250px 0 250px; */
     margin: 0 130px 0 130px;
 }
 
@@ -64,6 +64,7 @@ body {
     border-image-source: linear-gradient(to right, #FBAD1C, #FFFFFF, #FBAD1C);
     border-radius: 10px;
 }
+
 .btn-primary.btn-small {
     width: 195px;
     height: 60px;
@@ -123,9 +124,11 @@ body {
     width: 692.21px;
     height: 692.21px;
 }
+
 .servicesbar-wraper {
     background-color: #1E1E1E;
 }
+
 .servicesbar-wraper .services-item-wraper {
     display: flex;
     justify-content: space-between;
@@ -137,65 +140,95 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.084) 0%, rgba(217, 217, 217, 0.042) 100%);
     background-color: #1E1E1ED4;
     border: 1px solid #FFFFFF33;
-    /* transform: rotate(-3deg); */
     transform: skewY(-3deg);
 
 }
+
 .servicesbar-wraper .item {
     display: flex;
     align-items: center;
     gap: 20.8px;
 }
+
 h2 {
     font: normal 600 58px/70px "Fustat", sans-serif;
     color: #FFFFFF;
 }
+
 h3 {
     font: normal 700 38px/80px "Fustat", sans-serif;
     color: #FFFFFF;
 }
- h4 {
+
+h4 {
     font: normal 700 30px/100% "Fustat", sans-serif;
- }
- h5 {
+}
+
+h5 {
     font: normal 400 20px/37px "Fustat", sans-serif;
- }
- h6 {
+}
+
+h6 {
     font: normal 400 18px/30px "Fustat", sans-serif;
- }
+}
+
 .line-right {
     width: 40px;
     height: 2px;
     background: linear-gradient(90deg, #FBAD1C 31.83%, #FFFFFF 58.88%, #1E1E1E 100%);
 }
+
 .line-left {
     width: 40px;
     height: 2px;
     background: linear-gradient(-90deg, #FBAD1C 31.83%, #FFFFFF 58.88%, #1E1E1E 100%);
- }
+}
+
 .why-choose-wraper-outer {
     clip-path: ellipse(60% 100% at bottom);
-    background-image: linear-gradient(90deg, #FBAD1C 16.68%, #FCC050 44.84%, #FFFFFF 62.55%, rgba(255, 255, 255, 0.6) 77.1%, #1E1E1E 85.03%);;
-   background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, #FBAD1C 16.68%, #FCC050 44.84%, #FFFFFF 62.55%, rgba(255, 255, 255, 0.6) 77.1%, #1E1E1E 85.03%);
+    background-repeat: no-repeat;
 }
-.why-choose-wraper-inner{
+
+.why-choose-wraper-inner {
     padding: 250px 50px 0 50px;
     background-color: #1E1E1E;
     clip-path: ellipse(59% 98% at bottom);
 }
+
 .font-sora-p {
     font: normal 300 15px/156% "Sora", sans-serif;
     color: #A1AAC9;
 }
+
 .bottom-footer {
     border-top: 1px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #CBCBCB 51%, rgba(255, 255, 255, 0) 100%);
 }
+
+.services-wraper {
+    padding-left: 100px;
+}
+
+.webdev-wraper {
+    position: relative;
+    background-color: #292929;
+    padding: 37px 40px;
+    background:
+        linear-gradient(135deg, transparent 45px, #292929 0) top left,
+        linear-gradient(-47deg, transparent 59px, #292929 0) bottom left;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.corner-arrow {
+    position: absolute;
+    bottom: 1px;
+    right: 0px;
+}
+
 @media (min-width: 1280px) {
-    h2 {
-        font: normal 600 30px/40px "Fustat", sans-serif;
-    }
 
     h4 {
         font: normal 700 23px/100% "Fustat", sans-serif;
@@ -204,29 +237,132 @@ h3 {
     h5 {
         font: normal 400 20px/37px "Fustat", sans-serif;
     }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font: normal 600 30px/40px "Fustat", sans-serif;
+    }
 
     h6 {
         font: normal 400 18px/30px "Fustat", sans-serif;
     }
+}
+
+@media (max-width: 1280px) {
+    .servicesbar-wraper .services-item-wraper {
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    .servicesbar-wraper .item {
+        gap: 10px;
+    }
+
+    .servicesbar-wraper .item img {
+        width: 15px;
+        height: 15px;
+    }
 
     .services-wraper {
-        padding-left: 100px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 45px;
     }
 
-    .webdev-wraper {
-        position: relative;
-        background-color: #292929;
-        padding: 37px 40px;
-        background:
-            linear-gradient(135deg, transparent 45px, #292929 0) top left,
-            linear-gradient(-47deg, transparent 59px, #292929 0) bottom left;
-        background-size: 100% 50%;
-        background-repeat: no-repeat;
+    .navbar {
+        padding: 0 37px 0 39px;
+        height: 101px;
+        margin: 0 30px 0 30px;
     }
 
-    .corner-arrow {
-        position: absolute;
-        bottom: 1px;
-        right: 0px;
+    .banner-content-wraper h1 {
+        font-size: 45px;
+        font-weight: 60px;
+    }
+
+    .banner-content-wraper p {
+        font-size: 15px;
+        margin: 0 50px 30px 50px;
+    }
+
+
+    .banner-img-wraper {
+        padding-top: 250px;
+    }
+
+    .semicircle-wraper {
+        clip-path: ellipse(60% 100% at bottom);
+    }
+
+    .semicircle-wraper img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .servicesbar-wraper .services-item-wraper {
+        font-size: 16px;
+    }
+
+    .why-choose-wraper-outer {
+        clip-path: ellipse(100% 100% at bottom);
+    }
+
+    .why-choose-wraper-inner {
+        clip-path: ellipse(98% 99% at bottom);
+        padding: 80px 0px 0 0px;
+    }
+}
+
+@media (max-width: 640px) {
+    h2 {
+        font-size: 45px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .req-qt-btn {
+        display: none;
+    }
+
+    .banner-content-wraper {
+        margin-top: 100px;
+    }
+
+    .banner-content-wraper h1 {
+        font-size: 35px;
+    }
+
+    .banner-img-wraper {
+        padding-top: 184px;
+    }
+
+    .semicircle-wraper {
+        clip-path: ellipse(60% 100% at bottom);
+    }
+
+    .semicircle-wraper img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .servicesbar-wraper .services-item-wraper {
+        font-size: 12px;
+    }
+
+
+    .why-choose-wraper-outer {
+        clip-path: ellipse(113% 100% at bottom)
+    }
+
+    .why-choose-wraper-inner {
+        clip-path: ellipse(110% 99% at bottom);
+        padding: 69px 0px 0 0px;
     }
 }

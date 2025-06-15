@@ -23,7 +23,7 @@
                 <button class="menu">
                     <img src="./img/menu.svg" alt="menu">
                 </button>
-                <button class="btn-primary">
+                <button class="btn-primary req-qt-btn">
                     <span>Request a Quote</span>
                     <img src="./img/arrow-right.svg" alt="arrow right">
                 </button>
@@ -76,7 +76,8 @@
         </div>
 
         <!-- Our goals -->
-        <div class="grid grid-cols-3 gap-4 mt-[91.42px] max-w-[1200px] ml-auto mr-auto">
+        <div
+            class="grid max-md:grid-cols-1 max-md:gap-[100px] grid-cols-3 gap-4 pt-[91.42px] max-w-[1200px] ml-auto mr-auto bg-[#1E1E1E]">
             <div>
                 <img class="ml-auto mr-auto mb-[21.3px]" src="./img/designs.svg" alt="designs">
                 <h3 class="text-center">Designs</h3>
@@ -93,18 +94,21 @@
                 <h6 class="uppercase text-center text-[#FFFFFFBA]">We code the future</h6>
             </div>
         </div>
-        <div class="grid grid-cols-5 gap-4 mt-[102.64px]">
-            <div class="col-span-2 flex justify-end">
-                <img class="w-[500px] h-[500px]" src="./img/about-us.png" alt="about-us">
+        <div class="grid max-lg:grid-cols-1 grid-cols-5 max-lg:mx-[30px] mt-[102.64px]">
+            <div class="col-span-2 max-lg:col-span-1 flex justify-end max-lg:justify-center min-lg:pl-[50px]">
+                <img class="min-lg:w-[500px] min-lg:h-[500px]" src="./img/about-us.png" alt="about-us">
             </div>
-            <div class="col-span-2 pl-[93px]">
-                <div class="flex items-center gap-[9px] mb-[19px]">
+            <div class="col-span-2 xl:pl-[93px] lg:pl-[50px] max-lg:mt-[50px]">
+                <div class="flex max-lg:justify-center items-center gap-[9px] mb-[19px]">
+                    <div class="min-lg:hidden line-left"></div>
                     <h6 class="text-[#FFFFFF]">ABOUT US</h6>
                     <div class="line-right"></div>
                 </div>
-                <div class="text-[40px] font-[600] text-[#FFFFFF]">Software Development
+                <div class="max-lg:text-center max-sm:text-[30px] text-[40px] font-[600] text-[#FFFFFF]">Software
+                    Development
                     Company in Bahrain</div>
-                <div class="text-[18px] font-[400] text-[#FFFFFFBA] mb-[24px]">As a leading software development company
+                <div class="max-lg:text-center max-md:text-[16px] text-[18px] font-[400] text-[#FFFFFFBA] mb-[24px]">As
+                    a leading software development company
                     operating in Bahrain and India,
                     we offer an array of services tailored to enhance your business. From
                     securing your organization's endpoints to crafting effective digital marketing
@@ -114,22 +118,23 @@
                     industry-leading experts, we ensure professional handling of all entrusted
                     projects.
                 </div>
-                <button class="btn-primary">
+                <button class="btn-primary max-lg:mx-[auto]">
                     <span>Explore More</span>
                     <img src="./img/arrow-right.svg" alt="arrow right">
                 </button>
             </div>
-            <div class="col-span-1 flex items-start justify-end">
+            <div class="max-lg:hidden col-span-1 flex items-start justify-end">
                 <img src="./img/Group-62.svg" alt="Group-62">
             </div>
         </div>
 
         <!-- Platforms section  -->
-        <div class="grid grid-cols-7 mt-[121px]">
+        <div class="grid grid-cols-7 mt-[121px] max-sm:mt-[50px] max-md:mt-[80px] max-lg:mt-[100px]">
             <div class="col-span-1">
-                <img src="/img/side-design.svg" alt="side-design">
+                <img class="max-sm:h-[100px] max-md:h-[150px] max-lg:h-[200px] max-xl:h-[250px]"
+                    src="/img/side-design.svg" alt="side-design">
             </div>
-            <div class="col-span-6 grid grid-cols-5 pr-[130px]">
+            <div class="col-span-6 grid grid-cols-5 pr-[30px] xl:pr-[130px]">
                 <div
                     class="w-full h-full border border-[#222121E0] grid items-center justify-items-center bg-[#222121E0]">
                     <img src="./img/Umbrella-Color.svg" alt="Umbrella-Color">
@@ -172,76 +177,85 @@
 
         <!-- Why choose us section -->
         <div class="why-choose-wraper-outer mt-[103.78px]">
-            <div class="why-choose-wraper-inner grid grid-cols-3 items-center justify-items-center">
+            <div
+                class="why-choose-wraper-inner grid lg:grid-cols-3 max-lg:grid-cols-1 items-center justify-items-center">
                 <div>
-                    <img src="./img/Group-82.png" alt="Group-82">
+                    <img class="max-sm:w-[300px] lg:w-[300px]" src="./img/Group-82.png" alt="Group-82">
                 </div>
-                <div>
-                    <h2>Why Choose <span class="text-[#FBAD1C]">Us ?</span></h2>
-                    <h6 class="text-[#FFFFFFBA]">Over a decade of experience with thousands of
+                <div class="max-lg:text-center max-lg:mt-[50px]">
+                    <h2 class="lg:text-[30px]">Why Choose <span class="text-[#FBAD1C]">Us ?</span></h2>
+                    <h6 class="text-[#FFFFFFBA] lg:text-[12px]">Over a decade of experience with thousands of<br />
                         Satisfied customers. Our agile teams are dedicated <br />
                         And skilled across different industries.</h6>
                 </div>
-                <div class="text-[#FFFFFF] flex flex-col gap-[10px] items-center justify-items-center">
+                <div class="text-[#FFFFFF] flex flex-col gap-[10px] items-center justify-items-center max-lg:mt-[50px]">
                     <div
-                        class="border border-[#FFFFFF33] grid items-center justify-items-center w-[241.18px] h-[101.42px]">
-                        <div class="text-[35.77px] font-[800]">1000+</div>
-                        <div class="text-[17.88px] font-[800] uppercase">Happy Customers</div>
+                        class="border border-[#FFFFFF33] grid items-center justify-items-center w-[241.18px] h-[101.42px]  max-sm:max-w-[200px] max-sm:max-h-[80px]  lg:max-w-[150px] lg:max-h-[75px] 2xl:max-w-[241.18px] 2xl:max-h-[101.42px]">
+                        <div class="text-[35.77px] lg:text-[30px] 2xl:text-[35.77px] font-[800]">1000+</div>
+                        <div class="text-[17.88px] lg:text-[15px] 2xl:text-[17.88px] font-[800] uppercase">Happy
+                            Customers</div>
                     </div>
                     <div class="flex gap-[10px]">
                         <div
-                            class="border border-[#FFFFFF33] grid items-center justify-items-center w-[241.18px] h-[101.42px]">
-                            <div class="text-[35.77px] font-[800]">16+</div>
-                            <div class="text-[17.88px] font-[800] uppercase">years Experience</div>
+                            class="border border-[#FFFFFF33] grid items-center justify-items-center  w-[241.18px] h-[101.42px] max-sm:max-w-[200px] max-sm:max-h-[80px] lg:max-w-[150px] lg:max-h-[75px] 2xl:max-w-[241.18px] 2xl:max-h-[101.42px]">
+                            <div class="text-[35.77px] lg:text-[30px] 2xl:text-[35.77px] font-[800]">16+</div>
+                            <div class="text-[17.88px] lg:text-[15px] 2xl:text-[17.88px] font-[800] uppercase">years
+                                Experience</div>
                         </div>
                         <div
-                            class="border border-[#FFFFFF33] grid items-center justify-items-center w-[241.18px] h-[101.42px]">
-                            <div class="text-[35.77px] font-[800]">300+</div>
-                            <div class="text-[17.88px] font-[800] uppercase">Employees</div>
+                            class="border border-[#FFFFFF33] grid items-center justify-items-center w-[241.18px] h-[101.42px] max-sm:max-w-[200px] max-sm:max-h-[80px] lg:max-w-[150px] lg:max-h-[75px] 2xl:max-w-[241.18px] 2xl:max-h-[101.42px]">
+                            <div class="text-[35.77px] lg:text-[30px] 2xl:text-[35.77px] font-[800]">300+</div>
+                            <div class="text-[17.88px] lg:text-[15px] 2xl:text-[17.88px] font-[800] uppercase">Employees
+                            </div>
                         </div>
                     </div>
                     <div
-                        class="border border-[#FFFFFF33] grid items-center justify-items-center w-[241.18px] h-[101.42px]">
-                        <div class="text-[35.77px] font-[800]">08</div>
-                        <div class="text-[17.88px] font-[800] uppercase">Branches</div>
+                        class="border border-[#FFFFFF33] grid items-center justify-items-center w-[241.18px] h-[101.42px] max-sm:max-w-[200px] max-sm:max-h-[80px] lg:max-w-[150px] lg:max-h-[75px] 2xl:max-w-[241.18px] 2xl:max-h-[101.42px]">
+                        <div class="text-[35.77px] lg:text-[30px] 2xl:text-[35.77px] font-[800]">08</div>
+                        <div class="text-[17.88px] lg:text-[15px] 2xl:text-[17.88px] font-[800] uppercase">Branches
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Bottom banner section -->
-        <div class="mt-[75.39px]">
+        <div class="mt-[75.39px] flex justify-center">
             <img src="./img/mask-group.png" alt="mask-group">
         </div>
 
         <!-- Services section -->
         <div class="services-wraper grid grid-cols-6 mt-[126px]">
-            <div class="col-span-2">
-                <div class="flex items-center gap-[9px] mb-[19px]">
+            <div class="col-span-2 max-[1250px]:col-span-3 max-lg:col-span-6 max-lg:pr-[30px]">
+                <div class="flex items-center gap-[9px] max-lg:justify-center mb-[19px]">
+                    <div class="line-left"></div>
                     <h6 class="text-[#FFFFFF]">SERVICES</h6>
                     <div class="line-right"></div>
                 </div>
-                <h2 class="mb-[27px]">FIT SOLUTIONS <span class="capitalize">is<br />
+                <h2 class="mb-[27px] max-lg:text-center max-sm:text-[45px]">FIT SOLUTIONS <span
+                        class="capitalize">is<br />
                         a design and development <br />
                         firm in Bahrain,</span></h2>
-                <h6 class="text-[#FFFFFFBA] mb-[27px]">FIT SOLUTIONS is a design and development firm in Bahrain, with
+                <h6 class="text-[#FFFFFFBA] mb-[27px] max-lg:text-center">FIT SOLUTIONS is a design and development firm
+                    in Bahrain, with
                     service
                     centers in India. Our team consists of passionate designers and developers
                     eager for new challenges.</h6>
-                <button class="btn-primary">
+                <button class="btn-primary max-lg:mx-[auto]">
                     <span>Explore More</span>
                     <img src="./img/arrow-right.svg" alt="arrow right">
                 </button>
             </div>
-            <div class="col-span-3 justify-self-center">
-                <div class="webdev-wraper md:max-w-[550px] mt-[53px] flex">
-                    <div class="md:shrink-0 mr-[30px]">
+            <div
+                class="col-span-3 max-lg:col-span-6 max-[1250px]:col-span-3 max-[1250px]:pr-[30px] justify-self-center">
+                <div class="webdev-wraper md:max-w-[550px] mt-[53px] md:flex grid grid-cols-2 gap-[30px]">
+                    <div class="md:shrink-0 md:mr-[30px]">
                         <img class="md:w-[200px] md:h-[200px]" src="./img/website-development.png"
                             alt="website-development">
                     </div>
-                    <div class="self-center">
+                    <div class="self-center max-md:self-start">
                         <h4 class="text-[#FFFFFF] mb-[20px]">Website Development</h4>
-                        <p class="text-[#FFFFFFBA]">A website is often the first touch
+                        <p class="text-[#FFFFFFBA] max-sm:text-[12px]">A website is often the first touch
                             point between you and potential
                             customers. We understand how
                             vital it is to your brand.</p>
@@ -249,13 +263,13 @@
                     <img class="corner-arrow" src="./img/corner-arrow.svg" alt="corner-arrow">
                     <img class="absolute top-[0] right-[1px]" src="./img/Group62-n.svg" alt="Group62">
                 </div>
-                <div class="webdev-wraper md:max-w-[550px] mt-[53px] flex">
+                <div class="webdev-wraper md:max-w-[550px] mt-[53px] md:flex grid grid-cols-2 gap-[30px]">
                     <div class="md:shrink-0 mr-[30px]">
                         <img class="md:w-[200px] md:h-[200px]" src="./img/ecom.png" alt="ecom">
                     </div>
-                    <div class="self-center">
+                    <div class="self-center max-md:self-start">
                         <h4 class="text-[#FFFFFF] mb-[20px]">E-Commerce</h4>
-                        <p class="text-[#FFFFFFBA]">eCommerce can assist businesses
+                        <p class="text-[#FFFFFFBA] max-sm:text-[12px]">eCommerce can assist businesses
                             of all sizes to achieve their goals. Our
                             team can provide eCommerce services
                             ranging from determining what your
@@ -265,13 +279,13 @@
                     <img class="corner-arrow" src="./img/corner-arrow.svg" alt="corner-arrow">
                     <img class="absolute top-[0] right-[1px]" src="./img/Group62-n.svg" alt="Group62">
                 </div>
-                <div class="webdev-wraper md:max-w-[550px] mt-[53px] flex">
+                <div class="webdev-wraper md:max-w-[550px] mt-[53px] md:flex grid grid-cols-2 gap-[30px]">
                     <div class="md:shrink-0 mr-[30px]">
                         <img class="md:w-[200px] md:h-[200px]" src="./img/mobile-app.png" alt="mobile-app">
                     </div>
-                    <div class="self-center">
+                    <div class="self-center max-md:self-start">
                         <h4 class="text-[#FFFFFF] mb-[20px]">Mobile Application</h4>
-                        <p class="text-[#FFFFFFBA]">Businesses are now widely adopting
+                        <p class="text-[#FFFFFFBA] max-sm:text-[12px]">Businesses are now widely adopting
                             mobile applications to bring value to
                             their customers. This enhances the
                             efficiency of their operations, aiding
@@ -282,13 +296,13 @@
                     <img class="absolute top-[0] right-[1px]" src="./img/Group62-n.svg" alt="Group62">
                 </div>
             </div>
-            <div class="col-span-1 flex justify-end items-start">
+            <div class="col-span-1 max-[1250px]:hidden flex justify-end items-start">
                 <img src="/img/left-side-design.svg" alt="left-side-design">
             </div>
         </div>
 
         <!-- Services bar -->
-        <div class="servicesbar-wraper mt-[153.13px]">
+        <div class="servicesbar-wraper mt-[153.13px] max-lg:mt-[100px]">
             <div class="services-item-wraper">
                 <div class="item">
                     <span>UI/UX DEsign</span>
@@ -319,14 +333,13 @@
         <!-- Technologies -->
         <div class="grid grid-cols-1 mt-[91.5px]">
             <div class="col-span-1">
-                <!-- <img class="absolute" src="./img/Group-62-left.svg" alt="Group-62-left"> -->
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center max-md:px-[30px]">
                     <div class="flex items-center gap-[9px] mb-[35px]">
                         <div class="line-left"></div>
                         <h6 class="text-[#FFFFFF] uppercase">Technologies</h6>
                         <div class="line-right"></div>
                     </div>
-                    <h2 class="mb-[25px] capitalize">Incorporating advanced technologies.</h2>
+                    <h2 class="mb-[25px] capitalize text-center">Incorporating advanced technologies.</h2>
                     <h5 class="text-[#FFFFFFBA] mb-[25px] text-center">We offer a wide range of IT services and
                         solutions in
                         Bahrain to
@@ -340,66 +353,86 @@
                     </button>
                 </div>
             </div>
-            <div class="col-span-1 px-[200px] mt-[71px]">
-                <div class="grid grid-cols-3 h-[120px]">
-                    <img class="justify-self-end self-end" src="./img/Group-114.svg" alt="Group-114">
-                    <img class="justify-self-center" src="./img/Group-127.svg" alt="Group-127">
-                    <img class="justify-self-start self-end" src="./img/Group-98.svg" alt="Group-98">
+            <div class="col-span-1 p-[30px] xl:px-[200px] mt-[71px]">
+                <div class="grid grid-cols-3 h-[120px] max-md:h-[55px]">
+                    <img class="justify-self-end self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-114.svg"
+                        alt="Group-114">
+                    <img class="justify-self-center max-md:w-[40px] max-md:h-[40px]" src="./img/Group-127.svg"
+                        alt="Group-127">
+                    <img class="justify-self-start self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-98.svg"
+                        alt="Group-98">
                 </div>
-                <div class="grid grid-cols-5 h-[120px]">
-                    <img class="justify-self-end" src="./img/Group-115.svg" alt="Group-115">
-                    <img class="justify-self-center self-end" src="./img/Group-99.svg" alt="Group-99">
-                    <img class="justify-self-center" src="./img/Group-119.svg" alt="Group-119">
-                    <img class="justify-self-center self-end" src="./img/Group-129.svg" alt="Group-129">
-                    <div class="grid grid-cols-2">
-                        <img src="./img/Group-118.svg" alt="Group-118">
-                    </div>
+                <div class="grid grid-cols-5 h-[120px] max-md:h-[55px]">
+                    <img class="justify-self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-115.svg"
+                        alt="Group-115">
+                    <img class="justify-self-center self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-99.svg"
+                        alt="Group-99">
+                    <img class="justify-self-center max-md:w-[40px] max-md:h-[40px]" src="./img/Group-119.svg"
+                        alt="Group-119">
+                    <img class="justify-self-center self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-129.svg"
+                        alt="Group-129">
+                    <img class="max-md:w-[40px] max-md:h-[40px]" src="./img/Group-118.svg" alt="Group-118">
                 </div>
                 <div class="grid grid-cols-5">
-                    <img class="justify-self-center self-end" src="./img/Group-114.svg" alt="Group-114">
-                    <img class="justify-self-start self-center" src="./img/Group-111.svg" alt="Group-111">
-                    <img class="justify-self-center self-center" src="./img/Group-62-logo.svg" alt="Group-62-logo">
-                    <img class="justify-self-end self-center" src="./img/Group-103.svg" alt="Group-103">
+                    <img class="justify-self-center self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-114.svg"
+                        alt="Group-114">
+                    <img class="justify-self-start self-center max-md:w-[40px] max-md:h-[40px]"
+                        src="./img/Group-111.svg" alt="Group-111">
+                    <img class="justify-self-center self-center max-md:w-[40px] max-md:h-[40px]"
+                        src="./img/Group-62-logo.svg" alt="Group-62-logo">
+                    <img class="justify-self-end self-center max-md:w-[40px] max-md:h-[40px]" src="./img/Group-103.svg"
+                        alt="Group-103">
                     <div class="grid grid-cols-1">
-                        <img class="justify-self-end self-start" src="./img/Group-125.svg" alt="Group-125">
-                        <img class="justify-self-center self-end" src="./img/Group-111.svg" alt="Group-111">
+                        <img class="justify-self-end self-start max-md:w-[40px] max-md:h-[40px]"
+                            src="./img/Group-125.svg" alt="Group-125">
+                        <img class="justify-self-center self-end max-md:w-[40px] max-md:h-[40px]"
+                            src="./img/Group-111.svg" alt="Group-111">
                     </div>
                 </div>
-                <div class="grid grid-cols-5 h-[120px]">
-                    <img class="justify-self-end self-end" src="img/Group-121.svg" alt="Group-121">
-                    <img class="justify-self-center self-start" src="img/Group-107.svg" alt="Group-107">
-                    <img class="justify-self-center self-center" src="img/Group-124.svg" alt="Group-124">
-                    <img class="justify-self-center" src="img/Group-117.svg" alt="Group-117">
-                    <img class="self-end" src="img/Group-105.svg" alt="Group-105">
+                <div class="grid grid-cols-5 h-[120px] max-md:h-[55px]">
+                    <img class="justify-self-end self-end max-md:w-[40px] max-md:h-[40px]" src="img/Group-121.svg"
+                        alt="Group-121">
+                    <img class="justify-self-center self-start max-md:w-[40px] max-md:h-[40px]" src="img/Group-107.svg"
+                        alt="Group-107">
+                    <img class="justify-self-center self-center max-md:w-[40px] max-md:h-[40px]" src="img/Group-124.svg"
+                        alt="Group-124">
+                    <img class="justify-self-center max-md:w-[40px] max-md:h-[40px]" src="img/Group-117.svg"
+                        alt="Group-117">
+                    <img class="self-end max-md:w-[40px] max-md:h-[40px]" src="img/Group-105.svg" alt="Group-105">
                 </div>
-                <div class="grid grid-cols-3 h-[120px]">
-                    <img class="justify-self-end" src="./img/Group-106.svg" alt="">
-                    <img class="justify-self-center self-end" src="./img/Group-126.svg" alt="Group-126">
-                    <img class="justify-self-start" src="./img/Group-116.svg" alt="Group-116">
+                <div class="grid grid-cols-3 h-[120px] max-md:h-[55px]">
+                    <img class="justify-self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-106.svg" alt="">
+                    <img class="justify-self-center self-end max-md:w-[40px] max-md:h-[40px]" src="./img/Group-126.svg"
+                        alt="Group-126">
+                    <img class="justify-self-start max-md:w-[40px] max-md:h-[40px]" src="./img/Group-116.svg"
+                        alt="Group-116">
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
-        <div class="grid grid-cols-3 border-t border-t-[#FFFFFF1F] mt-[146.47px] pl-[170px] pt-[78px] pr-[50px]">
-            <div class="col-span-1">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 border-t border-t-[#FFFFFF1F] mt-[146.47px] px-[30px] pt-[40px] xl:pl-[170px] xl:pt-[78px] xl:pr-[50px]">
+            <div>
                 <div class="logo">
                     <img src="./img/logo.png" alt="logo">
                 </div>
-                <p class="font-sora-p text-[#A1AAC9] mt-[74px]">Cs simply dummy text of the printing and typesetting
+                <p class="font-sora-p text-[#A1AAC9] mt-[40px] xl:mt-[74px]">Cs simply dummy text of the printing and
+                    typesetting<br />
                     industry. Lorem Ipsum has been
-                    the industry's standard dummy been the industry's standard dummy</p>
-                <div class="flex items-center gap-[15.22px] mt-[26px]">
+                    the industry's standard<br /> dummy been the industry's standard dummy</p>
+                <div class="flex items-center gap-[15.22px] my-[26px] xl:mt-[26px]">
                     <a href="#facebook"><img src="./img/facebook.svg" alt="facebook"></a>
                     <a href="#instagram"><img src="./img/insta.svg" alt="instagram"></a>
                     <a href="#x"><img src="./img/x.svg" alt="x"></a>
                     <a href="#linkedin"><img src="./img/linkedin.svg" alt="linkedin"></a>
                 </div>
             </div>
-            <div class="col-span-1">
-                <div style="font-family: Sora, sans-serif" class="text-[#F1AE22] font-[400] text-[25px]">Ready To order
+            <div>
+                <div style="font-family: Sora, sans-serif" class="text-[#F1AE22] font-[400] text-[20px] xl:text-[25px]">
+                    Ready To order
                     Your Project ?</div>
-                <div class="text-[#FFFFFF] font-[400] text-[35px]">support@fridayinfotech.com</div>
+                <div class="text-[#FFFFFF] font-[400] text-[30px] xl:text-[35px]">support@fridayinfotech.com</div>
                 <div class="grid grid-cols-2 mt-[54px]">
                     <div class="col-span-1">
                         <div class="text-[25px] font-[600] text-[#FFFFFF]">Quick links</div>
@@ -433,9 +466,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-1 bg-[url(/img/map.png)] bg-no-repeat bg-center">
-                <div class="flex justify-end">
-                    <div class="">
+            <div class="md:col-span-2 lg:col-span-1 bg-[url(/img/map.png)] bg-no-repeat bg-center max-lg:h-[200px]">
+                <div class="flex lg:justify-end">
+                    <div>
                         <button class="btn-primary btn-small">
                             <span>Let’s talk</span>
                             <img src="./img/arrow-right.svg" alt="arrow right">
@@ -452,15 +485,16 @@
             </div>
         </div>
 
-        <div class="bottom-footer flex justify-between items-center pl-[170px] pr-[50px]">
-            <p class="text-[20px] text-[#FFFFFF] font-[600]">© FIT SOLUTIONS 2025/ All rights reserved.</p>
-            <div class="flex justify-between items-center text-[20px] text-[#FFFFFF] font-[400]">
+        <div class="bottom-footer flex justify-between items-center px-[30px] xl:pl-[170px] xl:pr-[50px]">
+            <p class="xl:text-[20px] text-[10px] text-[#FFFFFF] font-[600]">© FIT SOLUTIONS 2025/ All rights reserved.
+            </p>
+            <div class="flex justify-between items-center text-[8px] xl:text-[20px] text-[#FFFFFF] font-[400]">
                 <button class="cursor-pointer">Privacy Policy</button>
                 <div class="h-[19px] w-[2px] bg-[#FFFFFF] mx-[10px]"></div>
                 <button class="cursor-pointer">Terms and Conditions</button>
                 <div class="h-[19px] w-[2px] bg-[#FFFFFF] mx-[10px]"></div>
                 <button class="cursor-pointer">Sitemap</button>
-                <button class="cursor-pointe pl-[20px]"><img src="./img/arrow-top.svg" alt="arrow-top"></button>
+                <button class="cursor-pointe xl:pl-[20px]"><img src="./img/arrow-top.svg" alt="arrow-top"></button>
             </div>
         </div>
     </div>
