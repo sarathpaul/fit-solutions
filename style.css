@@ -10,8 +10,9 @@ body {
     background-image: url("./img/3d-shape-glowing-with-bright-holographic-colors1.png");
     background-color: #1E1E1E;
     background-repeat: no-repeat;
-    background-size: 100%;
+    /* background-size: 100%; */
     padding-top: 50px;
+    overflow-x: hidden;
 }
 
 .navbar {
