@@ -13,6 +13,7 @@
 
 <body>
 
+    <div id="smooth-content">
     <div class="main-wraper">
         <nav class="navbar">
             <div class="logo">
@@ -39,11 +40,19 @@
                 <img src="./img/arrow-right.svg" alt="arrow right">
             </button>
         </div>
-        <div class="banner-img-wraper">
-            <div class="semicircle-wraper">
+        <div class="slider-wraper mt-[125px]">
+            <div class="circle">
+                <img src="./img/img-circle.svg" alt="">
+            </div>
+            <div class="b-div">
                 <img src="./img/shape-1.png" alt="shape-1">
             </div>
         </div>
+        <!-- <div class="banner-img-wraper">
+            <div class="semicircle-wraper">
+                <img src="./img/shape-1.png" alt="shape-1">
+            </div>
+        </div> -->
 
         <!-- Services bar -->
         <div class="servicesbar-wraper">
@@ -129,11 +138,11 @@
 
         <!-- Platforms section  -->
         <div class="grid grid-cols-7 mt-[121px] max-sm:mt-[50px] max-md:mt-[80px] max-lg:mt-[100px]">
-            <div class="col-span-1 rotate-item">
+            <div class="col-span-1 rotate-circle">
                 <img class="max-sm:h-[100px] max-md:h-[150px] max-lg:h-[200px] max-xl:h-[250px]"
                     src="/img/side-design.svg" alt="side-design">
             </div>
-            <div class="col-span-6 grid grid-cols-5 pr-[30px] xl:pr-[130px]">
+            <div class="col-span-6 grid grid-cols-5 pr-[30px] xl:pr-[130px] platforms">
                 <div
                     class="w-full h-full border border-[#222121E0] grid items-center justify-items-center bg-[#222121E0]">
                     <img src="./img/Umbrella-Color.svg" alt="Umbrella-Color">
@@ -219,12 +228,13 @@
         </section>
 
         <!-- Bottom banner section -->
-        <div class="mt-[75.39px] flex justify-center">
+         <div class="sticky-wraper">
+        <div class="sticky-item mt-[75.39px] flex justify-center">
             <img src="./img/mask-group.png" alt="mask-group">
         </div>
 
         <!-- Services section -->
-        <div class="services-wraper grid grid-cols-6 mt-[126px]">
+        <div class="sticky-item services-wraper grid grid-cols-6 mt-[126px] bg-[#1E1E1E]">
             <div class="col-span-2 max-[1250px]:col-span-3 max-lg:col-span-6 max-lg:pr-[30px]">
                 <div class="flex items-center gap-[9px] max-lg:justify-center mb-[19px]">
                     <div class="line-left"></div>
@@ -295,9 +305,10 @@
                     <img class="absolute top-[0] right-[1px]" src="./img/Group62-n.svg" alt="Group62">
                 </div>
             </div>
-            <div class="col-span-1 max-[1250px]:hidden flex justify-end items-start rotate-item">
+            <div class="col-span-1 max-[1250px]:hidden flex justify-end items-start">
                 <img src="/img/left-side-design.svg" alt="left-side-design">
             </div>
+        </div>
         </div>
 
         <!-- Services bar -->
@@ -497,11 +508,26 @@
             </div>
         </div>
     </div>
+    </div>
 
     <script src="js/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        window.addEventListener(
+            "scroll",
+            () => {
+                document.body.style.setProperty(
+                    "--scroll",
+                    window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+                );
+            },
+            false
+        );
+    </script>
 </body>
 
 </html>

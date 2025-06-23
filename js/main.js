@@ -1,3 +1,10 @@
+let smoother = ScrollSmoother.create({
+  wrapper: '#smooth-wrapper',
+  content: '#smooth-content',
+  smooth: 2,
+  smoothTouch: 0.1
+});
+
 const titles = gsap.utils.toArray('.scroll-text-anim')
 
 titles.forEach((text, i) => {
@@ -138,3 +145,62 @@ moveDiv.forEach((item, i) => {
     duration: 2,
   });
 })
+
+// Background line trasition
+gsap.to(".why-choose-wraper-outer", {
+  scrollTrigger: {
+    trigger: ".why-choose-wraper-outer",
+    toggleActions: "play none none reverse",
+    // markers: true,
+    scrub: 1,
+    start: "100px 80%",
+    end: "+=100",
+  },
+  stagger: 1,
+  opacity: 1,
+  duration: 3,
+  ease: "power2.in",
+  keyframes: {
+    "0%": {
+      backgroundSize: "0"
+    },
+    "100%": {
+       backgroundSize: "100%"
+    }
+  }
+});
+
+
+// Parallax
+const panels = gsap.utils.toArray(".sticky-wraper .sticky-item");
+panels.forEach((panel, i) => {
+  gsap.to(panel, {
+    scrollTrigger: {
+      trigger: panel,
+      start: "top top",
+      pin: i === panels.length - 1 ? false : true,
+      pinSpacing: i === panels.length - 1 ? true : false,
+      scrub: 1,
+      invalidateOnRefresh: true,
+      markers: false
+    },
+    scale: 1.15
+  });
+});
+
+
+// Scale animation
+gsap.fromTo(
+  ".platforms",
+  { scale: 0.8 },
+  {
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".platforms",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: true,
+      markers: false,
+    },
+  }
+);
